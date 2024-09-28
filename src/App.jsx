@@ -12,13 +12,14 @@ function App() {
   return (
     <div className="flex flex-col   w-screen h-screen ">
       <header>
+        {/* No hay necesidad de declarar una etiqueta que abre y cierra un componente si este no recibe "children" por props */}
         <Header
           searchText={searchText}
           handleSearchBarOnChange={handleSearchBarOnChange}
-        ></Header>
+        />
       </header>
-
-      <Cards searchText={searchText}></Cards>
+      {/* same */}
+      <Cards searchText={searchText} />
     </div>
   );
 }
