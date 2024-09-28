@@ -1,5 +1,5 @@
-import { Header } from './Header';
-import { Cards } from './Cards';
+import { Header } from './components/commons/Header';
+import { Cards } from './components/cards/Cards';
 import { useState } from 'react';
 
 function App() {

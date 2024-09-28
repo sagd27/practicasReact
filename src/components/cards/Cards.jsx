@@ -1,6 +1,3 @@
-import { useState } from 'react';
-import SearchBar from './SearchBar';
-
 export const warframes = [
   {
     imgWf:
@@ -37,7 +34,7 @@ function Cards({ searchText }) {
     <>
       <div className="flex items-center justify-center m-5 ">
         {WfFiltrados.map((wf) => (
-          <CardWF key={wf.id} nombre={wf.nombreWf} img={wf.imgWf}></CardWF>
+          <CardWF key={wf.id} nombre={wf.nombreWf} img={wf.imgWf} />
         ))}
       </div>
     </>
