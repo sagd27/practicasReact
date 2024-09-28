@@ -10,7 +10,7 @@ function App() {
   }
 
   return (
-    <div className="flex flex-col   w-screen h-screen ">
+    <div className="flex flex-col w-screen h-screen ">
       <header>
         {/* No hay necesidad de declarar una etiqueta que abre y cierra un componente si este no recibe "children" por props */}
         <Header

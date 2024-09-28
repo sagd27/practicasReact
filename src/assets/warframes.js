@@ -1,3 +1,5 @@
+// hice esto solo para no embasurar los componentes, esta data mockeada es mejor si viene de un archivo así
+
 export const warframes = [
   {
     imgWf:
