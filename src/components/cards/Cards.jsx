@@ -1,10 +1,10 @@
 import { CardWF } from './CardWF';
-import { warframes } from '../../assets/warframes';
 
-function Cards({ searchText }) {
-  let WfFiltrados = warframes.filter((w) =>
-    w.nombreWf.toLowerCase().includes(searchText.toLowerCase())
-  );
+function Cards({ searchText, items }) {
+  const WfFiltrados =
+    items?.filter((w) =>
+      w.nombreWf.toLowerCase().includes(searchText.toLowerCase())
+    ) ?? [];
 
   return (
     <div className="flex items-center justify-center m-5 ">

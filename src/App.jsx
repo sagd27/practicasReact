@@ -1,6 +1,7 @@
+import { useState } from 'react';
+import { warframes } from './assets/warframes';
 import { Header } from './components/commons/Header';
 import { Cards } from './components/cards/Cards';
-import { useState } from 'react';
 
 function App() {
   const [searchText, setSearchText] = useState('');
@@ -19,7 +20,7 @@ function App() {
         />
       </header>
       {/* same */}
-      <Cards searchText={searchText} />
+      <Cards searchText={searchText} items={warframes} />
     </div>
   );
 }
