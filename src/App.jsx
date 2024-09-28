@@ -1,34 +1,26 @@
-import {Header} from "./Header";
-import {Cards} from "./Cards";
-import { useState } from "react";
-
- 
+import { Header } from './Header';
+import { Cards } from './Cards';
+import { useState } from 'react';
 
 function App() {
-  const [searchText, setSearchText] = useState("")
+  const [searchText, setSearchText] = useState('');
 
-  function handleSearchBarOnChange(newValue){
+  function handleSearchBarOnChange(newValue) {
     setSearchText(newValue);
   }
-  
-      console.log(searchText);
-
 
   return (
     <div className="flex flex-col   w-screen h-screen ">
-        <header>
-          <Header searchText={searchText}  handleSearchBarOnChange={handleSearchBarOnChange}></Header>
-        </header>
+      <header>
+        <Header
+          searchText={searchText}
+          handleSearchBarOnChange={handleSearchBarOnChange}
+        ></Header>
+      </header>
 
-     
-        <Cards searchText = {searchText}></Cards>
- 
+      <Cards searchText={searchText}></Cards>
     </div>
   );
 }
-
-
-
-
 
 export default App;

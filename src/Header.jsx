@@ -1,4 +1,4 @@
-import SearchBar from "./SearchBar";
+import SearchBar from './SearchBar';
 
 function Header({ searchText, handleSearchBarOnChange }) {
   return (
@@ -7,16 +7,17 @@ function Header({ searchText, handleSearchBarOnChange }) {
         <Cabezera />
         <Titulo />
       </div>
-     
-      <SearchBar searchText={searchText} handleSearchBarOnChange={handleSearchBarOnChange} />
+
+      <SearchBar
+        searchText={searchText}
+        handleSearchBarOnChange={handleSearchBarOnChange}
+      />
     </div>
   );
 }
 
 function Cabezera() {
-  return (
-    <h1 className="text-red-500 font-bold">Warframes</h1>
-  );
+  return <h1 className="text-red-500 font-bold">Warframes</h1>;
 }
 
 function Titulo() {

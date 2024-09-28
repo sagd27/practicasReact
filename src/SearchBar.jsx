@@ -1,4 +1,4 @@
-import { HiMiniMagnifyingGlass } from "react-icons/hi2";
+import { HiMiniMagnifyingGlass } from 'react-icons/hi2';
 
 function SearchBar({ searchText, handleSearchBarOnChange }) {
   return (
